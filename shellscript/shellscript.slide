@@ -9,6 +9,7 @@ https://codetrace.com/users/draexx
 
 * Que es la Shell 
 
+.background image/background.png
 - Es un intérprete de comandos
 - Es un programa a medio camino entre el usuario y el sistema operativo
 - Es también considerado un lenguaje de programación
@@ -16,12 +17,14 @@ https://codetrace.com/users/draexx
 
 * Los Shell más comunes en Linux son:
 
+.background image/background.png
 .image image/shells.png _ 690
 - Para saber que shell hay disponibles en el sistema utilice el comando:
   cat /etc/shells
   
 * ¿Qué es Shell Script?
 
+.background image/background.png
 - Es un script para la Shell de comandos (terminal).
 - Es una seride de comandos escritos en un archivo de texto plano.
 - Es una herramienta fácil de utilizar para construir aplicaciones “pegando” llamadas al sistema, herramientas, utilidades y archivos binarios.
@@ -29,12 +32,14 @@ https://codetrace.com/users/draexx
 
 * ¿Por qué crear un shell script?
 
+.background image/background.png
 - Para ahorrar tiempo en tareas repetitivas.
 - Para automatizar algunas tareas de la vida diaria.
 - Para automatizar algunas tareas de administración del servidor.
 
 * ¿Cómo crearlo?
 
+.background image/background.png
 - Crear un archivo de tecto plano con el editor de su preferencia
 ejemplo:
   nano script.sh
@@ -46,6 +51,7 @@ ejemplo:
   
 * Sha Bang (#!)
 
+.background image/background.png
 - Se denomina “sha-bang” a la secuencia #! con la que se inician los scripts.
 - Su función es indicarle al sistema que se trata de un conjunto de comandos para que sean Interpretados.
 - Es un número mágico de dos bytes.
@@ -53,6 +59,7 @@ ejemplo:
 
 * Sha Bang (#!)
 
+.background image/background.png
 - En la primera línea del script se debe indicar que shell que vas a usar.
  ( /bin/bash/ , /usr/bin/perl , etc )
 
@@ -60,6 +67,7 @@ ejemplo:
 
 * Comentarios
 
+.background image/background.png
 - Para introducir comentarios se debe poner #.
 - Es importante añadir comentarios comentando la utilidad del script o las variables que se crean.
 
@@ -67,6 +75,7 @@ ejemplo:
 
 * Definición de Variables
 
+.background image/background.png
 - Al igual que cualquier otro lenguaje de programación, los programas escritos en bash shell o Shell script pueden usar variables.
 - No tienen tipo.
 - Se definen: 
@@ -79,10 +88,12 @@ ejemplo:
 
 * Ejemplos
 
+.background image/background.png
 .code scripts/variables.sh
 
 * Reglas para definir variables.
 
+.background image/background.png
 - No poner espacios
  N=10
 - Las variables son sencibles a las mayúsculas, N y n son variables diferentes.
@@ -93,10 +104,12 @@ ejemplo:
 
 * Ejemplo
 
+.background image/background.png
 .play -edit scripts/variablesdef.sh
 
 * Aritmética en shell script
 
+.background image/background.png
 - Podemos realizar las operaciones mediante uso de:
   let c=$a+$b
   c='expr $a + $b'
@@ -104,6 +117,7 @@ ejemplo:
 
 * Recibir Argumentos
 
+.background image/background.png
 - Shell script al ser interactivo puede recibir argumentos al momento de su ejecución.
  
 .image image/argumentos.png _ 690
@@ -111,6 +125,7 @@ ejemplo:
  
 * Estructuras condicionales if .. then
  
+.background image/background.png 
   #!/bin/bash
   ...
   if [ !$# ]; then
@@ -120,6 +135,7 @@ ejemplo:
   
 * Condicional if .. then .. else
  
+.background image/background.png
   #!/bin/bash
   ...
   if [ $(whoami) = root ]; then
@@ -131,6 +147,7 @@ ejemplo:
   
 * Condicional if .. then .. elif
  
+.background image/background.png
   #!/bin/bash
   ...
   if [ $USER = root ]; then
@@ -144,16 +161,19 @@ ejemplo:
   
 * Ejemplo con argumentos
 
+.background image/background.png
 .code scripts/condicionalargumentos.sh
 
 * Ciclos: for, while y until
 
+.background image/background.png
 - El *for* es distinto a los de otros lenguajes de programación. Básicamente, le permite iterar sobre una serie de 'palabras' contenidas dentro de una cadena.
 - El *while* ejecuta un trozo de código si la expresión de control es verdadera, y termina cuando es falsa (o se encuentra una interrupción explícita dentro del código en ejecución).
 - El *until* es casi idéntico al while, excepto en que el código se ejecuta mientras la expresión de control se evalúe como falsa.
 
 * Ejemplo de for...
 
+.background image/background.png
   #!/bin/bash
   for i in $( ls ); do
     echo item: $i
@@ -161,6 +181,7 @@ ejemplo:
 
 * Ejemplo de while...
 
+.background image/background.png
   #!/bin/bash
   CONTADOR=0
   while [ $CONTADOR -lt 10 ]; do
@@ -170,6 +191,7 @@ ejemplo:
   
 * Ejemplo de until...
  
+.background image/background.png
   #!/bin/bash
   CONTADOR=20
   until [ $CONTADOR -lt 10 ]; do
@@ -178,7 +200,8 @@ ejemplo:
   done
   
 * La instrucción case...
- 
+
+.background image/background.png
   case $USER; in
     root)
        echo "Usuario es root";;
