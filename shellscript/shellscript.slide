@@ -152,10 +152,10 @@ ejemplo:
   ...
   if [ $USER = root ]; then
      echo “El usuario es root”
-  elif [ $(whoami) = gallego ]; then
-     echo “El usuario es El G@llego”
+  elif [ $(whoami) = academy ]; then
+     echo “El usuario es Academy”
   else
-     echo “Vos quien sos?”
+     echo “Y este quien es?”
   fi
   ...
   
