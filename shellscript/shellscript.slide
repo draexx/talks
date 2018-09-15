@@ -27,7 +27,7 @@ https://codetrace.com/users/draexx
 .background image/background.png
 - Es un script para la Shell de comandos (terminal).
 - Es una seride de comandos escritos en un archivo de texto plano.
-- Es una herramienta fácil de utilizar para construir aplicaciones “pegando” llamadas al sistema, herramientas, utilidades y archivos binarios.
+- Es una herramienta fácil de utilizar para construir aplicaciones, llamadas al sistema, herramientas, utilidades y archivos binarios.
 - Puede ser automático.
 
 * ¿Por qué crear un shell script?
