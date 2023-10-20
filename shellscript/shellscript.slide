@@ -89,6 +89,7 @@ ejemplo:
 * Ejemplos
 
 .background image/background.png
+
 .code scripts/variables.sh
 
 * Reglas para definir variables.
