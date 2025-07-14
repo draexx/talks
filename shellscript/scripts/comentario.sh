@@ -2,4 +2,4 @@
 #mi  primer script
 #hola mundo
 #comentario
-echo “hola mundo”
+echo "hola mundo"
