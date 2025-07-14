@@ -1,3 +1,3 @@
 #!/bin/sh
-echo N ́umero argumentos: $#
+echo Numero argumentos: $#
 echo Argumentos: $@
